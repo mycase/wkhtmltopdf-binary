@@ -2,13 +2,13 @@
 
 Gem::Specification.new do |s|
   s.name = "wkhtmltopdf-binary"
-  s.version = "0.12.6.5-slim"
+  s.version = "0.12.6.5-slim3"
   s.license = "Apache-2.0"
   s.author = "Zakir Durumeric"
   s.email = "zakird@gmail.com"
   s.platform = Gem::Platform::RUBY
   s.summary = "Provides binaries for WKHTMLTOPDF project in an easily accessible package."
-  s.files = Dir['bin/*']
+  s.files = Dir['bin/*', 'lib/*']
   s.executables << "wkhtmltopdf"
   s.require_path = '.'
 
