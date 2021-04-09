@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.require_path = '.'
 
   s.extensions = ['ext/wkhtmltopdf-binary/Rakefile']
+  s.metadata['allowed_push_host'] = 'https://rubygems.pkg.github.com/mycase'
 
   s.add_development_dependency "minitest"
 end
