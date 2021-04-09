@@ -12,5 +12,7 @@ Gem::Specification.new do |s|
   s.executables << "wkhtmltopdf"
   s.require_path = '.'
 
+  s.extensions = ['ext/wkhtmltopdf-binary/Rakefile']
+
   s.add_development_dependency "minitest"
 end
