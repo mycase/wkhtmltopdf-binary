@@ -38,7 +38,7 @@ suffix = case RbConfig::CONFIG['host_os']
            os_based_on_archlinux = os.start_with?('arch_') || os.start_with?('manjaro_')
            os = 'archlinux' if os_based_on_archlinux
 
-           os_based_on_alpine = os.start_with('alpine_')
+           os_based_on_alpine = os.start_with?('alpine_')
            os = 'alpine' if os_based_on_alpine
            # XXX: Included binary supports Alpine 3.13 only. Still requires dependencies to actually work.
            # This is useless unless you have also done `apk add wkhtmltopdf` on Alpine 3.13 still, but
