@@ -38,6 +38,14 @@ suffix = case RbConfig::CONFIG['host_os']
            os_based_on_archlinux = os.start_with?('arch_') || os.start_with?('manjaro_')
            os = 'archlinux' if os_based_on_archlinux
 
+           os_based_on_alpine = os.start_with('alpine_')
+           os = 'alpine' if os_based_on_alpine
+           # XXX: Included binary supports Alpine 3.13 only. Still requires dependencies to actually work.
+           # This is useless unless you have also done `apk add wkhtmltopdf` on Alpine 3.13 still, but
+           # this way we do something useless instead of raising and breaking the build on Alpine.
+           # We should probably break the build on unsupported platforms, but we need to un-break
+           # builds for now and can revisit this once we upgrade to a newer version of Ruby + Alpine.
+
            architecture = RbConfig::CONFIG['host_cpu'] == 'x86_64' ? 'amd64' : 'i386'
 
            "#{os}_#{architecture}"
