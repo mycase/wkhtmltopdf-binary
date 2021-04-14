@@ -1,3 +1,8 @@
+# 0.12.6.5.slim4 (published to https://rubygems.pkg.github.com/mycase)
+
+Add binary to support alpine linux (this still requires `apk add wkthmltopdf`
+to have been executed)
+
 # 0.12.6.5.slim (published to https://rubygems.pkg.github.com/mycase)
 
 Add gem extension to unzip the relevant binary upon gem installation
