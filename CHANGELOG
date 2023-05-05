@@ -20,6 +20,10 @@ wkhtmltopdf_debian_9_i386.gz, wkhtmltopdf_ubuntu_16.04_amd64.gz,
 wkhtmltopdf_ubuntu_16.04_i386.gz, wkhtmltopdf_ubuntu_18.04_amd64.gz,
 wkhtmltopdf_ubuntu_18.04_i386.gz
 
+# 0.12.6.6
+
+Add support for Ubuntu 22.04
+
 # 0.12.6.5
 
 Fix ability to use on Debian 9 systems
