@@ -51,15 +51,26 @@ macOS
 Binaries should be compressed with `gzip --best` after extracting. The matching binary will be extracted on first
 execution of `bin/wkhtmltopdf`.
 
-## Testing with Docker
+Hints for compressing binaries
 
-Make sure you have Docker and Docker Compose installed (see https://docs.docker.com/compose/install/ for more
-information).
+Debian/Ubuntu
+    user/local/bin refers to the extracted binaries directory
+    gzip --best -c usr/local/bin/wkhtmltopdf > wkhtmltopdf_ubuntu_22.04.amd64.gz
 
-There are Dockerfiles for the supported Linux based distributions under `.docker`. You can build them all with
-`docker-compose build` and run each individually with e.g. `docker-compose run ubuntu_18.04`.
+## Testing
 
-There also is a rudimentary minitest test that simply invokes `docker-compose run` for each distribution and
-expects to see the output of `wkhtmltopdf --version`. Just run `rake` to run it.
+To execute gem tests locally, install in your OS:
 
-You can clean up after testing with `docker-compose down --rmi all`.
+- Docker
+- Docker compose
+- Ruby
+- Bundler
+
+Then, execute the commands below:
+
+```bash
+git clone https://github.com/zakird/wkhtmltopdf_binary_gem
+cd wkhtmltopdf_binary_gem/
+bundle install
+bundle exec rake
+```
