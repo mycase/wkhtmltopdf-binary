@@ -1,3 +1,27 @@
+# 0.12.6.10 (published to https://rubygems.pkg.github.com/mycase)
+
+- Add support for Debian 13 (with Debian 12 binaries)
+
+# 0.12.6.9
+
+- Add support to ubuntu 22.04 and 24.04 in arm64
+- Add support for KDE Neon 22.04 & 24.04 (Ubuntu derivative)
+
+# 0.12.6.8
+
+- Add support for Ubuntu 24.04 using the Ubuntu 22.04 binary
+- Add support for Linux Mint 22 using the Ubuntu 22.04 binary
+- Add support for Alibaba Cloud Linux using the CentOS 8 binary
+- Add support for AlmaLinux using the CentOS 8 binary
+- Fix Amazon Linux 2023 support using the CentOS binaries
+
+# 0.12.6.7
+
+- Setup of GitHub action test automation for Linux/MacOS builds
+- Add URLs to gemspec for inclusion on Rubygems.org
+- Add support for several new Linux binaries for Debian, Centos, Ubuntu, Mint, Oracle, Tuxedo
+- Add support for several arm64 Linux binaries
+
 # 0.12.6.5.slim5 (published to https://rubygems.pkg.github.com/mycase)
 
 * Add binary to support Ubuntu 18.04 on amd64
@@ -90,4 +114,3 @@ Update MacOS `wkhtmltopdf` binary to 0.9.9
 
 # 0.9.9
 Update `wkhtmltopdf` binaries with version 0.9.9
-
